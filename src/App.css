@@ -1,0 +1,82 @@
+body {
+    background: url(/public/image.png);
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 15px;
+}
+
+.nav-section {
+  display: flex;            
+  flex-direction: row;      
+  gap: 20px;                
+  justify-content: end;  
+  align-items: end;
+}
+
+.nav-btn {
+  padding: 10px 16px;
+  background-color: #e0e0e000;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #ce6510;
+}
+
+    /* ----GEN TEXT---- */
+
+.title {
+    background-color: black;
+}
+
+.general-text {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 14px;
+}
+
+.txt {
+    color: #ce6510;
+    font-size: 32px;
+    position: relative;
+    top:  -90px;
+}
+
+.flag {
+    height: 35px;
+    width: 55px;
+    position: relative;
+    left: 390px;
+    top: -135px;
+}
+
+.btn-my-work{
+    position: relative;
+    top: -80px;
+}
+
+     
+    /* ------ */
+
+.about-me {
+    color: white;
+}
+
+.it-icons img{
+    height: 45px;
+    width: 45px;
+}
+
+.portfolio {
+    color: white;
+}
