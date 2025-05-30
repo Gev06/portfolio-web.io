@@ -50,7 +50,7 @@ function App() {
       </section>
 
       <section className="about-me">
-        <div className="about">About Me</div>
+        <div className="about"></div>
         <div className="skills">
           Skills
           <div className="it-icons">
@@ -64,6 +64,9 @@ function App() {
 
       <section className="portfolio">
         <div className="portfolio-text">Portfolio</div>
+        {/* <div className='work-btn-container'>
+        <button className="btn-my-work" onClick={workModal}>VIEW MY WORK</button>
+        </div> */}
       </section>
 
       <section className="contact">
