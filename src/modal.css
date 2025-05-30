@@ -1,0 +1,109 @@
+  /* ----modal---- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); */
+  width: 400px;
+  max-width: 90%;
+  animation: fadeIn 0.3s ease;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-button:hover{
+  transform: scale(1.2s);
+  color: rgba(30, 48, 216, 0.795);
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  margin-top: 10px;
+  resize: none;
+}
+
+.contact-logo {
+  height: 35px;
+  width: 35px;
+  margin: 0 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.work-modal-overlay {
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.work-modal-content{
+    background: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  max-width: 90%;
+  animation: fadeIn 0.3s ease;
+  position: relative;
+}
+
+.github-icon{
+  height: 150px;
+  width: 150px;
+  margin: 0 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  left: 100px;
+}
+
+.github-icon:hover{
+    transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 153, 255);
+}
+
+.github-text{
+  color: white;
+  font-size: 28px;
+  margin-top: 16px;
+}

@@ -1,82 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 body {
-    background: url(/public/image.png);
+  font-family: 'Inter', sans-serif;
+  background: url(/image%20copy%202.png) no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  backdrop-filter: brightness(0.6);
 }
 
-.logo{
-    color: white;
-    font-size: 30px;
-    position: relative;
-    top: 15px;
+.logo {
+  color: white;
+  font-size: 23px;
+  padding: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 0px;
+}
+
+.navigation-bar {
+  padding: 10px 30px;
 }
 
 .nav-section {
-  display: flex;            
-  flex-direction: row;      
-  gap: 20px;                
-  justify-content: end;  
-  align-items: end;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
 }
 
 .nav-btn {
-  padding: 10px 16px;
+  padding: 10px 20px;
   background-color: #e0e0e000;
   color: white;
-  border-radius: 4px;
+  font-weight: 600;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-  text-align: center;
-  font-weight: bold;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: -0px;
 }
 
 .nav-btn:hover {
-  background-color: #ce6510;
+  background-color:  rgba(0,255,255,0.5);
 }
 
-    /* ----GEN TEXT---- */
-
 .title {
-    background-color: black;
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .general-text {
-    color: white;
-    font-size: 60px;
-    position: relative;
-    top: 14px;
+  color: white;
+  font-size: 48px;
+  line-height: 1.2;
 }
 
+
 .txt {
-    color: #ce6510;
-    font-size: 32px;
-    position: relative;
-    top:  -90px;
+  color:  rgba(0,255,255,0.5);
+  font-size: 28px;
+  margin-top: 16px;
 }
 
 .flag {
-    height: 35px;
-    width: 55px;
-    position: relative;
-    left: 390px;
-    top: -135px;
+  height: 35px;
+  width: 55px;
+  margin-top: 12px;
 }
 
-.btn-my-work{
-    position: relative;
-    top: -80px;
+.btn-my-work {
+  margin-top: 40px;
+  background-color:  rgba(0,255,255,0.5);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-     
-    /* ------ */
-
-.about-me {
-    color: white;
+.btn-my-work:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
-.it-icons img{
-    height: 45px;
-    width: 45px;
+.about-me,
+.portfolio,
+.contact {
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  max-width: 1000px;
+  color: white;
+  text-align: center;
 }
 
-.portfolio {
-    color: white;
+.about,
+.skills,
+.portfolio-text,
+.constact-text {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.it-icons img {
+  height: 45px;
+  width: 45px;
+  margin: 0 10px;
+}
+
+.btn-message,
+.btn-send {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  background:  rgba(0,255,255,0.5);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* .btn-message:hover,
+.btn-send:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+} */
+
+      /* ---loyaut--- */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 30px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid rgba(0,255,255,0.5);
+}
+
+.sidebar-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar-info {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.main-content {
+  flex: 1;
+}
+
+
+
+    /* ----CONTACT BUTTON---- */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 30vh; */
+  /* background: #000; */
+}
+
+.btn-message {
+  width: 200px;
+  height: 80px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* left: 406px; */
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.btn-message h2 {
+  color: rgb(0, 153, 255);
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-message::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.btn-message:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.btn-message:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+    /* ---WORK BTN EFECT--- */
+
+.work-btn-container {
+   display: flex;
+  justify-content: center; 
+  align-items: center;     
+  /* height: 100vh;            */
+  /* background: #000; */
+}
+
+.btn-my-work {
+  width: 200px;
+  height: 80px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* left: 659px; */
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.btn-my-work h2 {
+  color: rgb(0, 153, 255);
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-my-work::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.btn-my-work:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.btn-my-work:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
 }
