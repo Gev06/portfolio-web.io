@@ -1,0 +1,85 @@
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+ .welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+.welcome-content {
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards; /* <--- ЭТО ВАЖНО */
+}
+
+.welcome-content {
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.welcome-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.enter-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #00bcd4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enter-button:hover {
+  background-color: #0f8d9b;
+}
+
+        /* ----LOADING---- */
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  border-top: 8px solid #00bcd4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -83,7 +83,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn-my-work:hover {
@@ -132,11 +132,23 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* .btn-message:hover,
-.btn-send:hover {
+.portfolio-btn {
+  margin-top: 40px;
+  background-color:  rgba(0,255,255,0.5);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-} */
+}
 
       /* ---loyaut--- */
 
@@ -180,16 +192,12 @@ body {
   flex: 1;
 }
 
-
-
     /* ----CONTACT BUTTON---- */
 
 .contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 30vh; */
-  /* background: #000; */
 }
 
 .btn-message {
@@ -200,7 +208,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* left: 406px; */
   overflow: hidden;
   border-radius: 15px;
   transition: all 0.5s ease;
@@ -244,11 +251,9 @@ body {
     /* ---WORK BTN EFECT--- */
 
 .work-btn-container {
-   display: flex;
+  display: flex;
   justify-content: center; 
   align-items: center;     
-  /* height: 100vh;            */
-  /* background: #000; */
 }
 
 .btn-my-work {
@@ -259,7 +264,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* left: 659px; */
   overflow: hidden;
   border-radius: 15px;
   transition: all 0.5s ease;
@@ -296,6 +300,62 @@ body {
 }
 
 .btn-my-work:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+    /* -----PORTFOLIO BTN----- */
+
+.portfolio-btn-container {
+   display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.portfolio-btn {
+  width: 200px;
+  height: 80px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.portfolio-btn h2 {
+  color: rgb(0, 153, 255);
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.portfolio-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.portfolio-btn:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
 }
